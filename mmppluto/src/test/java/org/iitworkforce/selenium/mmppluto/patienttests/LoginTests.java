@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 import org.iitworkforce.selenium.mmppluto.lib.AppLibrary;
+import org.iitworkforce.selenium.mmppluto.lib.BaseClass;
 import org.iitworkforce.selenium.mmppluto.patientpages.HomePage;
 import org.iitworkforce.selenium.mmppluto.patientpages.LoginPage;
 import org.testng.Assert;
@@ -11,7 +12,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class LoginTests extends org.iitworkforce.selenium.mmppluto.lib.BaseClass {
+public class LoginTests extends BaseClass {
 	
 	
 	HashMap<String,String> expectedHMap= new HashMap<String,String>();
@@ -49,7 +50,7 @@ public class LoginTests extends org.iitworkforce.selenium.mmppluto.lib.BaseClass
 	{
 		launchBrowser(pro.getProperty("url"));
 		LoginPage loginPage = new LoginPage(driver);
-		HomePage homePage = loginPage.login(username,password);
+	HomePage homePage = loginPage.login(username,password);
 		String actualTitle = homePage.getcurrentTitle();
 		//String actualTitle="home";
 		String expectedTitle=expectedMsg;
