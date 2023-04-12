@@ -6,7 +6,7 @@
 		<parameter name="password" value="Ria12345" />
 		<parameter name="invpassword" value="ria1"/> 
     <classes>
-      <class name="org.iitworkforce.selenium.mmppluto.adminTests.LoginTests"/>
+      <class name="org.iitworkforce.selenium.mmppluto.patienttests.LoginTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
