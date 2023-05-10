@@ -3,9 +3,9 @@ package org.iitworkforce.selenium.mmppluto.patienttests;
 import java.util.HashMap;
 
 import org.iitworkforce.selenium.mmppluto.lib.BaseClass;
-import org.iitworkforce.selenium.mmppluto.patientpages.ScheduleAppointmentPage;
 import org.iitworkforce.selenium.mmppluto.patientpages.HomePage;
 import org.iitworkforce.selenium.mmppluto.patientpages.LoginPage;
+import org.iitworkforce.selenium.mmppluto.patientpages.ScheduleAppointmentPage;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;

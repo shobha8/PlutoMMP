@@ -11,7 +11,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
  
 
-public class ConnectionManager
+public class ConnectionManager1
 {
 	/*
 	 * Load the Driver Instance->class.forName("pass the driver class")

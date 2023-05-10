@@ -7,6 +7,7 @@ import org.iitworkforce.selenium.mmppluto.patientpages.LoginPage;
 import org.iitworkforce.selenium.mmppluto.patientpages.ScheduleAppointmentPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -25,7 +26,10 @@ public class ScheduleAppoitmenstTests1 {
 	public void instantiateDriver()
 	{
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--remote-allow-origins=*");
+			driver = new ChromeDriver(options);
+			
 			launchBrowser("http://96.84.175.78/MMP-Release2-Integrated-Build.6.8.000/portal/login.php");
 			
 		 

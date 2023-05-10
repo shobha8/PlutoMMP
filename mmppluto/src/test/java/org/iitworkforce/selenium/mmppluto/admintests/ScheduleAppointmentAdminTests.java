@@ -2,6 +2,7 @@ package org.iitworkforce.selenium.mmppluto.admintests;
 
 import java.util.HashMap;
 
+import org.iitworkforce.selenium.mmppluto.lib.BaseClass;
 import org.iitworkforce.selenium.mmppluto.patientpages.HomePage;
 
 
@@ -11,7 +12,7 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class ScheduleAppointmentAdminTests extends org.iitworkforce.selenium.mmppluto.lib.BaseClass {
+public class ScheduleAppointmentAdminTests extends BaseClass {
 	
 	
 	HashMap<String,String> expectedHMap= new HashMap<String,String>();

@@ -3,6 +3,7 @@ package org.iitworkforce.selenium.mmppluto.patienttests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -14,7 +15,9 @@ public class ViewHistory {
 	@Test(description="US_008 View History",groups={"US_008","regression","sanity","patientmodule"})
 	public void validate_ViewHistory() throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--remote-allow-origins=*");
+		driver = new ChromeDriver(options);
         driver.manage().window().maximize();
 		driver.get("http://96.84.175.78/MMP-Release2-Integrated-Build.6.8.000/portal/login.php");
 		
